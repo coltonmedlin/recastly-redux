@@ -9,7 +9,7 @@ var searchYouTube = ({key, query, max = 5}, callback) => {
   })
     .done(({items}) => {
       if (callback) {
-        return callback(items);
+        callback(items);
       }
     })
     .fail(({responseJSON}) => {
