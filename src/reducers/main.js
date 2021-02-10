@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import currentVideo from './currentVideo.js';
 import videoList from './videoList.js';
 
-var rootReducer = () => {
+var rootReducer = (state, action) => {
   return combineReducers({
     currentVideo,
     videoList
