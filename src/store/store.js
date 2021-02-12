@@ -13,6 +13,6 @@ const configureStore = (initState) => {
   );
 };
 
-const store = configureStore({currentVideo: {}, videos: []});
+const store = configureStore({currentVideo: exampleVideoData[0], videoList: exampleVideoData});
 
 export default store;
